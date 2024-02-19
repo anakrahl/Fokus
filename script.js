@@ -51,7 +51,7 @@ function alterarContexto(contexto) {
         contexto.classList.remove('active')
     })
     tagHTML.setAttribute('data-contexto', contexto);
-    bannerFoto.setAttribute('src', `/imagens/${contexto}.png`);
+    bannerFoto.setAttribute('src', `imagens/${contexto}.png`);
     switch (contexto) {
         case "foco":
             titulo_txt.innerHTML =
@@ -90,14 +90,14 @@ function iniciarPausar(){
     SonsPlayAudio.play()
     intervaloId = setInterval((contagemRegressiva), 1000)
     iniciarPausarBotao.textContent = "Pausar"
-    iconPausePlay.setAttribute('src', `/imagens/pause.png`)
+    iconPausePlay.setAttribute('src', `imagens/pause.png`)
 
 
 }
 function zerarTemporizador(){
     clearInterval(intervaloId)
     iniciarPausarBotao.textContent = "Começar"
-    iconPausePlay.setAttribute('src', `/imagens/play_arrow.png`)
+    iconPausePlay.setAttribute('src', `imagens/play_arrow.png`)
     intervaloId = null
 }
 
